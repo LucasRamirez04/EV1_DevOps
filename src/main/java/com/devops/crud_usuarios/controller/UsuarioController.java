@@ -17,6 +17,7 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
+    //ESTE METODO LISTA TODOS LOS USUARIOS
     @GetMapping
     public List<Usuario> listar() {
         return usuarioService.listar();
