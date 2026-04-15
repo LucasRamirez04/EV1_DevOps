@@ -22,7 +22,7 @@ public class UsuarioController {
     public List<Usuario> listar() {
         return usuarioService.listar();
     }
-
+    //ESTE METODO BUSCA UN USUARIO POR SU ID
     @GetMapping("/{id}")
     public Optional<Usuario> obtener(@PathVariable Long id) {
         return usuarioService.obtenerPorId(id);
